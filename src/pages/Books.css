@@ -1,0 +1,135 @@
+.books-page {
+  min-height: 100vh;
+  padding: 80px 40px;
+  background-color: black;
+  color: white;
+  font-family: "Texturina", serif;
+}
+
+.books-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #f2da7c;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.book-card {
+  background: rgba(255, 255, 255, 0.078);
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(236, 197, 43, 0.284);
+}
+
+.book-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.book-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.book-card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.details-link {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background-color: #f2da7c;
+  color: black;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.details-link:hover {
+  background-color: #f2da7cc4;
+  transform: scale(1.05);
+}
+
+.status {
+  text-align: center;
+  color: aliceblue;
+  margin-top: 120px;
+  font-size: 1.2rem;
+}
+
+.status.error {
+  color: #ff6b6b;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+  .books-page {
+    padding: 70px 20px;
+  }
+
+  .books-title {
+    font-size: 2.1rem;
+    margin-bottom: 35px;
+  }
+
+  .books-grid {
+    gap: 22px;
+  }
+
+  .book-card {
+    padding: 14px;
+  }
+
+  .book-card img {
+    height: 220px;
+  }
+
+  .book-card h4 {
+    font-size: 1rem;
+  }
+
+  .book-card p {
+    font-size: 0.85rem;
+  }
+
+  .details-link {
+    font-size: 0.8rem;
+    padding: 7px 16px;
+  }
+}
+
+/* 📱 SMALL PHONES */
+@media (max-width: 480px) {
+  .books-title {
+    font-size: 1.9rem;
+  }
+
+  .book-card img {
+    height: 200px;
+  }
+
+  .details-link {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,170 @@
+.book-details {
+  min-height: 100vh;
+  padding: 100px 60px;
+  background-color: black;
+  font-family: "Texturina", serif;
+  color: white;
+}
+
+.details-layout {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* LEFT */
+.details-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.details-cover {
+  width: 320px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(236, 197, 43, 0.35);
+}
+
+/* RIGHT */
+.details-right {
+  flex: 2;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  border-radius: 22px;
+  padding: 35px 40px;
+}
+
+.details-title {
+  font-size: 2.6rem;
+  color: #f2da7c;
+  margin-bottom: 20px;
+}
+
+.details-author,
+.details-pages {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.details-right strong {
+  color: #f2da7c;
+}
+
+.book-status {
+  margin: 15px 0 25px;
+  font-size: 0.95rem;
+}
+
+.book-status.read {
+  color: #7dff9b;
+}
+
+.book-status.unread {
+  color: #f2da7c;
+}
+
+/* DESCRIPTION */
+.book-description h3 {
+  color: #f2da7c;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.book-description p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* BUTTON */
+.mark-btn {
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-family: "Texturina", serif;
+  border-radius: 22px;
+  border: none;
+  background-color: #f2da7c;
+  color: black;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mark-btn:hover {
+  background-color: #f2da7cc4;
+  transform: scale(1.07);
+  box-shadow: 0 10px 30px rgba(236, 197, 43, 0.4);
+}
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+  .book-details {
+    padding: 100px 20px;
+  }
+
+  .details-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .details-left {
+    width: 100%;
+  }
+
+  .details-cover {
+    
+    width: 240px;
+    height: 360px;
+  }
+
+  .details-right {
+    width: 100%;
+    padding: 28px;
+    text-align: center;
+  }
+
+  .details-title {
+    font-size: 2.1rem;
+  }
+
+  .details-author,
+  .details-pages {
+    font-size: 0.95rem;
+  }
+
+  .book-description h3 {
+    font-size: 1.1rem;
+  }
+
+  .book-description p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .mark-btn {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+/* 📱 SMALL PHONES */
+@media (max-width: 480px) {
+  .details-title {
+    font-size: 1.9rem;
+  }
+
+  .details-cover {
+    width: 220px;
+    height: 330px;
+  }
+
+  .details-right {
+    padding: 22px;
+  }
+}

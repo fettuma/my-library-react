@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina:wght@400;600;700&display=swap");
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+ font-family: "Texturina", serif;
+  background-color: black;
+  min-height: 100vh;
+  overflow-x: hidden; /* safety net */
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  font-family: "Texturina", serif;
+  padding: 13px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #f2da7c;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #f2da7cc4;
+  transform: scale(1.05);
+}
+
+/* 📱 TABLET */
+@media (max-width: 900px) {
+  .home {
+    height: 85vh;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.05rem;
+    max-width: 520px;
+  }
+
+  .cta-btn {
+    padding: 12px 26px;
+    font-size: 0.95rem;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+  .home {
+    height: 80vh;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    max-width: 90%;
+    line-height: 1.6;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 6px;
+  }
+}
