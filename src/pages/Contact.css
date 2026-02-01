@@ -1,0 +1,88 @@
+.contact-section {
+  min-height: 60vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Texturina", serif;
+  padding: 60px 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITLE */
+.contact-section h2 {
+  font-size: 2.6rem;
+  color: #f2da7c;
+  margin-bottom: 25px;
+}
+
+/* TEXT */
+.contact-text {
+  font-size: 1.05rem;
+  line-height: 2;
+  opacity: 0.88;
+  margin-bottom: 40px;
+  max-width: 520px;
+}
+
+/* ICONS CONTAINER */
+.contact-icons {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ICON STYLE */
+.contact-icons a {
+  font-size: 1.8rem;
+  color: #f2da7c;
+  background: rgba(242, 218, 124, 0.08);
+  padding: 14px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HOVER EFFECT */
+.contact-icons a:hover {
+  background-color: #f2da7c;
+  color: black;
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 10px 25px rgba(242, 218, 124, 0.45);
+}
+
+/*  RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2.1rem;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  .contact-icons {
+    gap: 18px;
+  }
+
+  .contact-icons a {
+    font-size: 1.6rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-text {
+    line-height: 1.8;
+  }
+}
