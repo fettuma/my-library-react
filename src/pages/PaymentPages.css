@@ -1,0 +1,55 @@
+.payment-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: "Texturina", serif;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.payment-title {
+  font-size: 2.5rem;
+  color: #f2da7c;
+  margin-bottom: 20px;
+}
+
+.payment-text {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.85;
+  max-width: 500px;
+}
+
+.payment-btn {
+  padding: 12px 28px;
+  border-radius: 22px;
+  border: none;
+  background-color: #f2da7c;
+  color: black;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-btn:hover {
+  background-color: #f2da7cc4;
+  transform: scale(1.07);
+  box-shadow: 0 10px 30px rgba(236, 197, 43, 0.4);
+}
+
+/* 📱 Mobile responsive */
+@media (max-width: 480px) {
+  .payment-title {
+    font-size: 2rem;
+  }
+
+  .payment-text {
+    font-size: 0.95rem;
+  }
+}

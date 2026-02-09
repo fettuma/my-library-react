@@ -11,6 +11,9 @@ const BookDetails = () => {
   const decodedId = decodeURIComponent(id);
   const dispatch = useDispatch();
 
+ 
+  const { user } = useSelector(state => state);
+
   const { books, loading } = useSelector(state => state.books);
 
   // 🔹 description state
@@ -65,6 +68,27 @@ const BookDetails = () => {
   if (!book) {
     return <p className="status error"> Book not found</p>;
   }
+
+
+  const BOOK_PRICE = 5;
+
+  const handleBuy = async () => {
+    if (!user?.token) {
+      alert("Please login to buy this book");
+      return;
+    }
+  const response = await axios.post(
+    "http://localhost:4242/create-checkout-session",
+    {
+      title: book.titre,
+      price: BOOK_PRICE,
+    }
+  );
+
+  window.location.href = response.data.url;
+};
+
+
 return (
   <div className="book-details">
     <div className="details-layout">
@@ -116,7 +140,17 @@ return (
           <button className="mark-btn" onClick={handleMarkAsRead}>
             Mark as read
           </button>
+          
         )}
+        <div className="book-payment">
+          <p className="book-price">Price: $5</p>
+
+          <button className="book-buy-btn" onClick={handleBuy}>
+            Buy Book
+          </button>
+        </div>
+
+
       </div>
 
     </div>
