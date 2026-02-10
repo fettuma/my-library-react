@@ -30,6 +30,10 @@ const Navbar = () => {
         <a href="/#About" onClick={() => setOpen(false)}>About</a>
         <a href="/#contact" onClick={() => setOpen(false)}>Contact</a>
       </div>
+      <div className={`nav-links nav-right ${open ? "active" : ""}`}>
+        <Link to="/login" onClick={() => setOpen(false)}>Login</Link>
+        <Link to="/register" onClick={() => setOpen(false)}>Register</Link>
+      </div>
     </nav>
   );
 };

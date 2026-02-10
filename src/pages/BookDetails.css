@@ -153,6 +153,52 @@
   }
 }
 
+
+
+
+/* 💳 PAYMENT SECTION */
+.book-payment {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(242, 218, 124, 0.25);
+}
+
+.book-price {
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  color: #f2da7c;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+/* Buy button matches mark-btn style */
+.book-buy-btn {
+  padding: 12px 30px;
+  font-family: "Texturina", serif;
+  border-radius: 22px;
+  border: none;
+  background-color: transparent;
+  color: #f2da7c;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #f2da7c;
+  transition: 0.3s;
+}
+
+.book-buy-btn:hover {
+  background-color: #f2da7c;
+  color: black;
+  transform: scale(1.07);
+  box-shadow: 0 10px 30px rgba(236, 197, 43, 0.4);
+}
+
+
+
+
+
+
+
 /* 📱 SMALL PHONES */
 @media (max-width: 480px) {
   .details-title {

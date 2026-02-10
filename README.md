@@ -41,7 +41,10 @@ npm start
 5. Ouvrir l’application dans le navigateur :
 http://localhost:3000
 
-## AUTEURS :
-- Yasmine : https://github.com/Yaasmiiine
-- Fatima :  https://github.com/fettuma
 
+## Team Members :
+- Yasmine : UI components, styling, static pages     https://github.com/Yaasmiiine
+- Fatima : Redux logic, core pages        https://github.com/fettuma
+
+## Live Demo: 
+https://my-library-react.vercel.app/
