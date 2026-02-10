@@ -9,8 +9,39 @@
 .books-title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #f2da7c;
+}
+
+/* 🔍 SEARCH BAR */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(242, 218, 124, 0.4);
+  color: white;
+  font-size: 0.95rem;
+  outline: none;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+  font-family: "Texturina", serif;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input:focus {
+  border-color: #f2da7c;
+  box-shadow: 0 0 15px rgba(242, 218, 124, 0.35);
 }
 
 .books-grid {
@@ -19,6 +50,8 @@
   gap: 30px;
   max-width: 1200px;
   margin: auto;
+  justify-items: center; 
+
 }
 
 .book-card {
@@ -28,6 +61,9 @@
   text-align: center;
   transition: 0.3s ease;
   backdrop-filter: blur(6px);
+  width: 100%;
+  max-width: 240px; /* 👈 THIS fixes the stretching */
+
 }
 
 .book-card:hover {
@@ -89,7 +125,7 @@
 
   .books-title {
     font-size: 2.1rem;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 
   .books-grid {
@@ -122,6 +158,11 @@
 @media (max-width: 480px) {
   .books-title {
     font-size: 1.9rem;
+  }
+
+  .search-input {
+    font-size: 0.9rem;
+    padding: 10px 16px;
   }
 
   .book-card img {
