@@ -17,7 +17,7 @@ const Login = () => {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:4242/login", {
+      const res = await fetch("https://my-library-backend-wu24.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -27,7 +27,7 @@ const Login = () => {
 
       if (res.ok) {
         dispatch(loginUser(data));
-        navigate("/books"); // 🔥 redirect here
+        navigate("/books"); //  redirect here
       } else {
         setError(data.error);
       }

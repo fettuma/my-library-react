@@ -78,7 +78,7 @@ const BookDetails = () => {
       return;
     }
   const response = await axios.post(
-    "http://localhost:4242/create-checkout-session",
+    "https://my-library-backend-wu24.onrender.com/create-checkout-session",
     {
       title: book.titre,
       price: BOOK_PRICE,

@@ -17,7 +17,7 @@ const Register = () => {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:4242/register", {
+      const res = await fetch("https://my-library-backend-wu24.onrender.com/Register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
