@@ -78,6 +78,7 @@ const BookDetails = () => {
       return;
     }
   const response = await axios.post(
+    
     "https://my-library-backend-wu24.onrender.com/create-checkout-session",
     {
       title: book.titre,
@@ -85,7 +86,7 @@ const BookDetails = () => {
     }
   );
 
-  window.location.href = response.data.url;
+   window.open(response.data.url, "_blank");
 };
 
 
