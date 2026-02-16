@@ -4,9 +4,11 @@
 MyLibrary est une application web développée avec **React** et **Redux Toolkit** permettant de gérer une bibliothèque scolaire.
 
 L’application permet :
-- de consulter une liste de livres,
+- de consulter et rechercher des livres via l’API OpenLibrary,
 - d’ajouter des livres manuellement via un formulaire,
+- de visualiser les détails complets d’un livre,
 - de marquer des livres comme lus,
+- d'effectuer un achat simulé via Stripe,
 - d’afficher des statistiques de lecture (nombre de livres lus, pages cumulées).
 
 Ce projet a été réalisé dans le cadre d’un **mini-projet académique** en respectant une architecture **SPA (Single Page Application)**.
@@ -17,9 +19,23 @@ Ce projet a été réalisé dans le cadre d’un **mini-projet académique** en 
 - React (composants fonctionnels & Hooks)
 - React Router
 - Redux Toolkit
+- Stripe API
 - Node.js / npm
 - API OpenLibrary
 - CSS (design minimaliste, sans framework)
+
+---
+
+##  APIs utilisées
+ **OpenLibrary API**
+  - Recherche de livres
+  - Récupération des informations (titre, auteur, description)
+ **OpenLibrary Covers API**
+  - Récupération dynamique des couvertures via coverId
+ **Stripe API**
+  - Intégration d’un bouton Purchase
+  - Simulation de paiement sécurisé
+  - Redirection vers Stripe Checkout
 
 ---
 
